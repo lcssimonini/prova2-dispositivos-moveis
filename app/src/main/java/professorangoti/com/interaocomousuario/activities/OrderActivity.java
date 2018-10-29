@@ -16,6 +16,7 @@ import professorangoti.com.interaocomousuario.R;
 public class OrderActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     private String pedido;
     private int entrega;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,5 +79,11 @@ public class OrderActivity extends AppCompatActivity implements AdapterView.OnIt
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
 
+    }
+
+    public void fecharConta(View view) {
+        Intent intent = new Intent(OrderActivity.this, PriceActivity.class);
+        intent.putExtra("pedido", pedido);
+        startActivity(intent);
     }
 }

@@ -31,4 +31,5 @@
         <item>Mobile</item>
         <item>Other</item>
     </string-array>
+    <string name="title_activity_price">PriceActivity</string>
 </resources>

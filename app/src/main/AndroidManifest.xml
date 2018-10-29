@@ -23,6 +23,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.OrderActivity" />
+        <activity
+            android:name=".activities.PriceActivity"
+            android:label="@string/title_activity_price"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
